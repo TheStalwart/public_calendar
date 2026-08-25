@@ -1,0 +1,20 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    // Prettier insists on self-closing tags
+    // that are not W3C-compliant,
+    // so use VSCode built-in formatter instead
+    // https://github.com/prettier/prettier/issues/5641
+    "editor.defaultFormatter": "vscode.html-language-features"
+    // Why is Copilot fighting with autoformatter?
+    // Every change i request corrupts the document
+    // and requires a manual undo to fix it.
+  },
+}
